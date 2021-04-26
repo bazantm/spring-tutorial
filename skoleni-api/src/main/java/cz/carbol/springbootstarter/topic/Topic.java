@@ -1,7 +1,5 @@
 package cz.carbol.springbootstarter.topic;
 
-
-// pokus
 public class Topic {
 	
 	private String id;
