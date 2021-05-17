@@ -22,6 +22,7 @@ public class TopicService {
 	
 	public List<Topic> getAllTopics() {
 		List<Topic> topics = new ArrayList<>();
+		
 		topicRepository.findAll()
 		.forEach(topics::add);
 		
@@ -41,7 +42,7 @@ public class TopicService {
 	}
 
 	public void deleteTopic(String id) {
-		topics.removeIf(t -> t.getId().equals(id));
+		topicRepository.deleteById(id);
 		
 	}
 
